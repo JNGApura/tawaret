@@ -14,6 +14,7 @@
 		2CC3ED9020F9686E00E98110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3ED8E20F9686E00E98110 /* LaunchScreen.storyboard */; };
 		2CC3ED9B20F9686E00E98110 /* TawaretProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3ED9A20F9686E00E98110 /* TawaretProjectTests.swift */; };
 		2CC3EDA620F9686E00E98110 /* TawaretProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3EDA520F9686E00E98110 /* TawaretProjectUITests.swift */; };
+		2CC3EDB520F9692B00E98110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3EDB420F9692A00E98110 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2CC3EDA120F9686E00E98110 /* TawaretProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TawaretProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3EDA520F9686E00E98110 /* TawaretProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawaretProjectUITests.swift; sourceTree = "<group>"; };
 		2CC3EDA720F9686E00E98110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC3EDB420F9692A00E98110 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		2CC3ED8420F9686C00E98110 /* TawaretProject */ = {
 			isa = PBXGroup;
 			children = (
-				2CC3ED8520F9686C00E98110 /* AppDelegate.swift */,
+				2CC3EDB320F968E600E98110 /* SupportFiles */,
 				2CC3ED8720F9686C00E98110 /* ViewController.swift */,
 				2CC3ED8920F9686C00E98110 /* Main.storyboard */,
 				2CC3ED8C20F9686E00E98110 /* Assets.xcassets */,
-				2CC3ED8E20F9686E00E98110 /* LaunchScreen.storyboard */,
-				2CC3ED9120F9686E00E98110 /* Info.plist */,
 			);
 			path = TawaretProject;
 			sourceTree = "<group>";
@@ -123,6 +123,25 @@
 				2CC3EDA720F9686E00E98110 /* Info.plist */,
 			);
 			path = TawaretProjectUITests;
+			sourceTree = "<group>";
+		};
+		2CC3EDB320F968E600E98110 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2CC3EDB620F9693600E98110 /* Network */,
+				2CC3ED8520F9686C00E98110 /* AppDelegate.swift */,
+				2CC3ED8E20F9686E00E98110 /* LaunchScreen.storyboard */,
+				2CC3EDB420F9692A00E98110 /* GoogleService-Info.plist */,
+				2CC3ED9120F9686E00E98110 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		2CC3EDB620F9693600E98110 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC3ED9020F9686E00E98110 /* LaunchScreen.storyboard in Resources */,
+				2CC3EDB520F9692B00E98110 /* GoogleService-Info.plist in Resources */,
 				2CC3ED8D20F9686E00E98110 /* Assets.xcassets in Resources */,
 				2CC3ED8B20F9686C00E98110 /* Main.storyboard in Resources */,
 			);
@@ -432,7 +452,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BHE99ZFAUF;
-				INFOPLIST_FILE = TawaretProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TawaretProject/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JNGApura.TawaretProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,7 +471,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BHE99ZFAUF;
-				INFOPLIST_FILE = TawaretProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TawaretProject/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JNGApura.TawaretProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
